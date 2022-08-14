@@ -9,6 +9,31 @@
 					"label": ""
 				}
 			]
+		},
+		{
+			"path": "www/index.html",
+			"bookmarks": [
+				{
+					"line": 18,
+					"column": 5,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "www/styles/home.css",
+			"bookmarks": [
+				{
+					"line": 53,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 65,
+					"column": 26,
+					"label": ""
+				}
+			]
 		}
 	]
 }

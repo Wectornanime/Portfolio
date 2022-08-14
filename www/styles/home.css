@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap');
 
 
 :root{
     --banner-primary: 'DynaPuff', cursive;
     --banner-secundary: 'Poiret One', cursive;
+    --primary-font: 'Poppins', sans-serif;
 }
 
 *{
@@ -47,4 +49,77 @@ body{
 #banner p{
     font-family: var(--banner-secundary);
     font-size: 1.2em;
+}
+
+/*
+#nav{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    
+    background-color: red;
+}
+
+#nav a{
+    width: 1.4em;
+    height: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: white;
+    margin: 0.1em;
+    padding: 2px;
+    border-radius: 100%;
+}
+*/
+
+#nav{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: auto;
+    padding: 5% 1% 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: rgba(169, 169, 169, 0.4);
+}
+
+#nav a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-family: var(--primary-font);
+}
+
+#nav a label{
+    margin-right: 0.2em;
+}
+
+#nav a ion-icon{
+    width: 1.5em;
+    height: 1.5em;
+    margin: 2px;
+    padding: 2px;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: white;
 }
