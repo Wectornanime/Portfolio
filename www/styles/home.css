@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 
+
 :root{
     --banner-primary: 'DynaPuff', cursive;
     --banner-secundary: 'Poiret One', cursive;
@@ -54,6 +55,7 @@ body{
     font-size: 1.2em;
 }
 
+
 /* opc = 1
 #nav{
     position: absolute;
@@ -85,6 +87,7 @@ body{
 */
 
 /* opc = 2
+
 #nav{
     position: absolute;
     top: 0%;
@@ -163,3 +166,4 @@ body{
     font-weight: 300;
     color: white;
 }
+
