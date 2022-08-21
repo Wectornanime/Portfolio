@@ -1,7 +1,7 @@
 {
 	"files": [
 		{
-			"path": "www/js/bg-img-change.js",
+			"path": "docs/js/bg-img-change.js",
 			"bookmarks": [
 				{
 					"line": 10,
@@ -11,7 +11,7 @@
 			]
 		},
 		{
-			"path": "www/index.html",
+			"path": "docs/index.html",
 			"bookmarks": [
 				{
 					"line": 18,
@@ -31,16 +31,11 @@
 			]
 		},
 		{
-			"path": "www/styles/home.css",
+			"path": "docs/styles/home.css",
 			"bookmarks": [
 				{
-					"line": 56,
+					"line": 343,
 					"column": 10,
-					"label": ""
-				},
-				{
-					"line": 86,
-					"column": 9,
 					"label": ""
 				}
 			]
