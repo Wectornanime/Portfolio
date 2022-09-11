@@ -1,42 +1,42 @@
 {
 	"files": [
 		{
-			"path": "docs/js/bg-img-change.js",
+			"path": "web/js/bg-img-change.js",
 			"bookmarks": [
 				{
 					"line": 10,
 					"column": 8,
-					"label": ""
+					"label": "log de teste"
 				}
 			]
 		},
 		{
-			"path": "docs/index.html",
+			"path": "web/projects-teste.html",
 			"bookmarks": [
 				{
-					"line": 18,
+					"line": 10,
 					"column": 6,
 					"label": ""
-				},
+				}
+			]
+		},
+		{
+			"path": "web/styles/card.css",
+			"bookmarks": [
 				{
-					"line": 29,
-					"column": 5,
-					"label": ""
-				},
-				{
-					"line": 35,
-					"column": 11,
+					"line": 16,
+					"column": 17,
 					"label": ""
 				}
 			]
 		},
 		{
-			"path": "docs/styles/home.css",
+			"path": "web/styles/home.css",
 			"bookmarks": [
 				{
-					"line": 343,
-					"column": 10,
-					"label": ""
+					"line": 22,
+					"column": 4,
+					"label": "nav bar"
 				}
 			]
 		}
