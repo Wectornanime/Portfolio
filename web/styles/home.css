@@ -18,12 +18,20 @@
     margin: 0;
 }
 
+/* scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+
 /* nav bar */
 
 nav{
     visibility: hidden;
     height: 0;
 }
+
 
 /* Banner de inicio */
 
