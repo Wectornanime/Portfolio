@@ -21,22 +21,22 @@
 			]
 		},
 		{
-			"path": "web/styles/card.css",
-			"bookmarks": [
-				{
-					"line": 16,
-					"column": 17,
-					"label": ""
-				}
-			]
-		},
-		{
 			"path": "web/styles/home.css",
 			"bookmarks": [
 				{
 					"line": 30,
 					"column": 4,
 					"label": "nav bar"
+				},
+				{
+					"line": 34,
+					"column": 13,
+					"label": "section"
+				},
+				{
+					"line": 89,
+					"column": 5,
+					"label": "log"
 				}
 			]
 		}
