@@ -32,6 +32,12 @@ nav{
     height: 0;
 }
 
+/* section */
+
+section{
+    height: 100vh;
+}
+
 
 /* Banner de inicio */
 
@@ -73,4 +79,52 @@ section #inicio{
     font-size: 1.2em;
 }
 
+#projetos{
+    background-color: aqua;
+    height: 100vh;
+}
+#habilidades{
+    background-color: rgb(255, 0, 0);
+    height: 100vh;
+}
+#abount-me{
+    background-color: aqua;
+    height: 100vh;
+}
 /**/
+
+/* footer */
+
+footer {
+    background-color: #e7e7e7;
+    color: #262626;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.content-1 {
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div.content-2 {
+    margin: 10px;
+
+    font-family: var(--banner-secundary);
+    font-weight: 200;
+    font-style: italic;
+    color: black;
+}
+
+.redes ul {
+    list-style: none;
+    display: flex;
+}
+
+.redes ul li {
+    margin-right: 5px;
+}
