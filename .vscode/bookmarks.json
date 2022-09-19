@@ -11,31 +11,31 @@
 			]
 		},
 		{
-			"path": "web/projects-teste.html",
+			"path": "web/styles/home.css",
 			"bookmarks": [
 				{
-					"line": 10,
-					"column": 6,
+					"line": 34,
+					"column": 4,
+					"label": "nav bar"
+				},
+				{
+					"line": 40,
+					"column": 13,
+					"label": "section"
+				},
+				{
+					"line": 189,
+					"column": 17,
 					"label": ""
 				}
 			]
 		},
 		{
-			"path": "web/styles/home.css",
+			"path": "web/js/slider.js",
 			"bookmarks": [
 				{
-					"line": 30,
-					"column": 4,
-					"label": "nav bar"
-				},
-				{
-					"line": 34,
+					"line": 102,
 					"column": 13,
-					"label": "section"
-				},
-				{
-					"line": 89,
-					"column": 5,
 					"label": "log"
 				}
 			]
