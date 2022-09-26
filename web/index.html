@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/home.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,7 +20,7 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#abount-me">Abount-me</a></li>
+                <!-- <li><a href="#abount-me">Abount-me</a></li> -->
             </ul>
         </nav>
     </header>
@@ -32,10 +36,157 @@
             </div>
         </section>
 
-        <section id="projetos"></section>
-        <section id="habilidades"></section>
-        <section id="abount-me"></section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+
+            <div class="slider">
+                <div class="images">
+                    <img src="images/cookie-the-pom-gySMaocSdqs-unsplash.jpg" alt="image-project-1" id="img-1">
+                    <img src="images/cookie-the-pom-gySMaocSdqs-unsplash.jpg" alt="image-project-2" id="img-2">
+                    <img src="images/cookie-the-pom-gySMaocSdqs-unsplash.jpg" alt="image-project-3" id="img-3">
+                </div>
+                <div class="controller">
+                    <input type="radio" name="selec-image" id="selec-1" checked>
+                    <input type="radio" name="selec-image" id="selec-2">
+                    <input type="radio" name="selec-image" id="selec-3">
+                </div>
+            </div>
+
+            <div class="description">
+                <p id="desc-1">Projeto em desenvolvimento <i></i></p>
+                <p id="desc-2">Projeto em desenvolvimento <i></i></p>
+                <p id="desc-3">Projeto em desenvolvimento <i></i></p>
+            </div>
+
+            <div class="buttons">
+                <button id="but-1" ><a href="#">Abrir projeto</a></button>
+                <button id="but-2" ><a href="#">Abrir projeto</a></button>
+                <button id="but-3" ><a href="#">Abrir projeto</a></button>
+            </div>
+        </section>
+        
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            
+            <div class="contents">
+                <div class="content-left">
+                    <h3>Habilidades que tenho</h3>
+                    <ul class="grid-ha">
+                        <li>
+                            <i class="devicon-html5-plain"></i>
+                            <p>HTML5</p>
+                        </li>
+                        <li>
+                            <i class="devicon-css3-plain"></i>
+                            <p>CSS3</p>
+                        </li>
+                        <li>
+                            <i class="devicon-javascript-plain"></i>
+                            <p>JavaScript</p>
+                        </li>
+                        <li>
+                            <i class="devicon-python-plain"></i>
+                            <p>Python3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-right">
+                    <h3>Habilidades que procuro desenvolver</h3>
+                    <ul class="grid-ha">
+                        <li>
+                            <i class="devicon-sass-original"></i>
+                            <p>SASS</p>
+                        </li>
+                        <li>
+                            <i class="devicon-typescript-plain"></i>
+                            <p>TypeScript</p>
+                        </li>
+                        <li>
+                            <i class="devicon-nodejs-plain"></i>
+                            <p>NodeJs</p>
+                        </li>
+                        <li>
+                            <i class="devicon-react-original"></i>
+                            <p>React</p>
+                        </li>
+                        <li>
+                            <i class="devicon-express-original"></i>
+                            <p>Express</p>
+                        </li>
+                        <li>
+                            <i class="devicon-php-plain"></i>
+                            <p>PHP</p>
+                        </li>
+                        <li>
+                            <i class="devicon-django-plain"></i>
+                            <p>Django</p>
+                        </li>
+                        <li>
+                            <i class="devicon-pandas-original"></i>
+                            <p>Pandas</p>
+                        </li>
+                        <li>
+                            <i class="devicon-tensorflow-original"></i>
+                            <p>TensorFlow</p>
+                        </li>
+                        <li>
+                            <i class="devicon-mysql-plain"></i>
+                            <p>MySQL</p>
+                        </li>
+                        <li>
+                            <i class="devicon-mongodb-plain"></i>
+                            <p>MongoDB</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <section id="abount-me"></section> -->
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="content-1">
+            <div>
+                <h2>Repositório no Github</h2>
+                <a href="https://github.com/Wectornanime/Portfolio" target="_blank" rel="external">GitHub</a>
+            </div>
+            <div class="redes">
+                <h2>Redes</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/wectornanime-nascimento-b0ba89198/" target="_blank" rel="external" >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Wectornanime" target="_blank" rel="external" >
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/wectornanime/" target="_blank" rel="external" >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Creditos de imagem</h2>
+                <h3>Banner</h3>
+                <p>Foto de <a href="https://unsplash.com/@emilep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow" >Emile Perron</a>, <a href="https://unsplash.com/" target="_blank" rel="nofollow" >Unsplash</a></p>
+                
+                <h3>Projetos</h3>
+                <p>Foto de <a href="https://unsplash.com/@cookiethepom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow" >Cookie the Pom</a>, <a href="https://unsplash.com/" target="_blank" rel="nofollow" >Unsplash</a></p>
+            </div>
+        </div>
+        <div class="content-2">
+            <p>@Wectornanime</p>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+
 </body>
 </html>

@@ -11,32 +11,32 @@
 			]
 		},
 		{
-			"path": "web/projects-teste.html",
-			"bookmarks": [
-				{
-					"line": 10,
-					"column": 6,
-					"label": ""
-				}
-			]
-		},
-		{
-			"path": "web/styles/card.css",
-			"bookmarks": [
-				{
-					"line": 16,
-					"column": 17,
-					"label": ""
-				}
-			]
-		},
-		{
 			"path": "web/styles/home.css",
 			"bookmarks": [
 				{
-					"line": 22,
+					"line": 50,
 					"column": 4,
 					"label": "nav bar"
+				},
+				{
+					"line": 56,
+					"column": 13,
+					"label": "section"
+				},
+				{
+					"line": 246,
+					"column": 4,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "web/js/slider.js",
+			"bookmarks": [
+				{
+					"line": 102,
+					"column": 13,
+					"label": "log"
 				}
 			]
 		}

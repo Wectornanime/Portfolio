@@ -2,21 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
 
 
 :root{
+    --primary-font: 'Poppins', sans-serif;
+    --secundary-font: 'Open Sans', sans-serif;
+    
+    --header-logo: 'Patrick Hand', cursive;
+    
     --banner-primary: 'DynaPuff', cursive;
     --banner-secundary: 'Poiret One', cursive;
-    --primary-font: 'Poppins', sans-serif;
-    --header-logo: 'Patrick Hand', cursive;
-    --header-font: ;
+
+    --footer-backgroud-color: #e7e7e7;
+    --footer-text-color: #262626;
+    --footer-font: 'Roboto Slab', serif;
+
+    --body-backgroud-color: #f5f5f5;
+    --body-text-color: #09080A;
+
+    --grid-color-1: #09080A;
+    --grid-color-2: #c5c266;
 }
 
 *{
     padding: 0;
     margin: 0;
 }
+
+/* Body */
+
+body{
+    background-color: var(--body-backgroud-color);
+    color: var(--body-text-color);
+}
+
+/* scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 
 /* nav bar */
 
@@ -25,9 +52,37 @@ nav{
     height: 0;
 }
 
+
+
+/* section */
+
+section{
+    margin-bottom: 5vh;
+}
+
+section h2 {
+    margin-top: 0.2em;
+    margin-left: 1.3em;
+    margin-bottom: 1em;
+    font-family: var(--primary-font);
+}
+
+h2 {
+    font-family: var(--secundary-font);
+}
+
+h3 {
+    font-family: var(--secundary-font);
+}
+
+p, a {
+    font-family: var(--secundary-font);
+}
+
+
 /* Banner de inicio */
 
-section #inicio{
+section#inicio{
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -52,17 +107,204 @@ section #inicio{
     position: absolute;
     top: 65%;
     left: 5%;
-    color: white;
 }
 
 #banner h1{
     font-family: var(--banner-primary);
     font-size: 3.2em;
+    color: white;
 }
 
 #banner p{
     font-family: var(--banner-secundary);
     font-size: 1.2em;
+    color: white;
 }
 
-/**/
+/* section projetos */
+
+section#projetos{
+    margin: auto;
+    height: 85vh;
+}
+
+/* slider */
+
+div.slider {
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+div.slider div.images {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+div.slider div.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+}
+
+div.slider div.controller {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+div.slider div.controller input {
+    margin: 0 2px;
+}
+
+/* description */
+
+div.description {
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+div.description p {
+    background-color: white;
+    font-weight: 500;
+
+    width: 90vw;
+    padding: 0.5em;
+    border-radius: 10px;
+    position: absolute;
+}
+
+/* button */
+
+div.buttons {
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+div.buttons button {
+    position: absolute;
+    padding: 0.3em 1em;    
+
+    border-radius: 10px;
+    border-style: none;
+}
+
+div.buttons button a {
+    font-family: var(--primary-font);
+    color: var(--body-text-color);
+    text-decoration: none;
+
+}
+
+/* section habilidades */
+
+section#habilidades {
+    font-family: 'Open Sans', sans-serif;
+    bottom: 1em;
+}
+
+section#habilidades .contents {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* GRID */
+
+section#habilidades ul.grid-ha {
+    margin-top: 10px;
+    width: 45vw;
+    list-style-type: none;
+    color: var(--grid-color-2);
+
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: start;
+}
+
+section#habilidades ul.grid-ha li {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid var(--grid-color-2);
+    border-radius: 20px;
+}
+
+ul.grid-ha li i {
+    font-size: 60px;
+}
+ul.grid-ha li p {
+    color: var(--grid-color-2);
+    font-family: var(--secundary-font);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--footer-backgroud-color);
+    color: var(--footer-text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: var(--footer-font);
+}
+
+footer div.content-1 {
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div.content-1 h2, h3, p {
+    font-family: var(--footer-font);
+    color: var(--footer-text-color);
+}
+
+footer div.content-1 a {
+    font-family: var(--footer-font);
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+footer div.content-1 a:hover {
+    text-decoration: underline;
+}
+
+footer div.content-2 {
+    margin: 10px;
+
+    font-family: var(--banner-secundary);
+    font-weight: 200;
+    font-style: italic;
+    color: var(--footer-text-color);
+}
+
+.redes ul {
+    list-style: none;
+    display: flex;
+}
+
+.redes ul li {
+    margin-right: 5px;
+}
