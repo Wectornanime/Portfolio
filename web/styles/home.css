@@ -42,10 +42,12 @@ nav{
 
 section{
     background-color: whitesmoke;
+    margin: 5vh 0;
 }
 
 section h2 {
-    margin-left: 1em;
+    margin-top: 0.2em;
+    margin-left: 1.3em;
     margin-bottom: 1em;
     font-family: var(--primary-font);
 }
@@ -103,7 +105,7 @@ section#inicio{
 
 section#projetos{
     margin: auto;
-    height: 100vh;
+    height: 85vh;
 }
 
 /* slider */
@@ -186,13 +188,46 @@ div.buttons button a {
 
 }
 
-/* habilidades */
+/* section habilidades */
 
 section#habilidades {
-    visibility: hidden;
-    height: 0;
-    width: 0;
     font-family: 'Open Sans', sans-serif;
+    bottom: 1em;
+}
+
+section#habilidades .contents {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* GRID */
+
+section#habilidades ul.grid-ha {
+    width: 45vw;
+    list-style-type: none;
+    color: red;
+
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: start;
+}
+
+section#habilidades ul.grid-ha li {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+ul.grid-ha li i {
+    font-size: 60px;
 }
 
 
