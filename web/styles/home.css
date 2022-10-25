@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
 
+@import url(responsive.css);
 
 :root{
     --primary-font: 'Poppins', sans-serif;
@@ -67,14 +68,6 @@ section h2 {
     margin-left: 1.3em;
     margin-bottom: 1em;
     font-family: var(--primary-font);
-}
-
-@media only screen and (min-width: 1024px) {
-    section:not(#inicio) {
-        width: 1024px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 /* texts */
@@ -180,27 +173,6 @@ div.slider div.controller input {
     margin: 0 2px;
 }
 
-@media only screen and (max-width: 1024px) {
-    div.slider {
-        height: calc(60vw * 9/16);
-        width: 60vw;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    div.slider {
-        height: calc(80vw * 9/16);
-        width: 80vw;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    div.slider {
-        height: calc(90vw * 9/16);
-        width: 90vw;
-    }
-}
-
 /* description */
 
 div.description {
@@ -256,26 +228,6 @@ section#habilidades .contents {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 800px){
-    section#habilidades {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    section#habilidades .contents {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    section#habilidades {
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 /* GRID */
 
 section#habilidades ul.grid-ha {
@@ -312,19 +264,6 @@ ul.grid-ha li i {
 ul.grid-ha li p {
     color: var(--grid-color-2);
     font-family: var(--secundary-font);
-}
-
-@media only screen and (max-width: 800px) {
-    section#habilidades ul.grid-ha {
-        margin-bottom: 25px;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    section#habilidades ul.grid-ha {
-        width: 292px;
-        grid-template-columns: auto auto auto;
-    }
 }
 
 /* footer */

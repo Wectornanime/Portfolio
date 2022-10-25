@@ -1,0 +1,71 @@
+/* section */
+
+@media only screen and (min-width: 1024px) {
+    section:not(#inicio) {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* section projetos */
+
+/* slider */
+
+@media only screen and (max-width: 1024px) {
+    div.slider {
+        height: calc(60vw * 9/16);
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.slider {
+        height: calc(80vw * 9/16);
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div.slider {
+        height: calc(90vw * 9/16);
+        width: 90vw;
+    }
+}
+
+/* section habilidades */
+
+@media only screen and (max-width: 800px){
+    section#habilidades {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#habilidades .contents {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    section#habilidades {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* GRID */
+
+@media only screen and (max-width: 800px) {
+    section#habilidades ul.grid-ha {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    section#habilidades ul.grid-ha {
+        width: 292px;
+        grid-template-columns: auto auto auto;
+    }
+}
