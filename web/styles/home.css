@@ -217,29 +217,29 @@ div.description {
 }
 
 div.description p {
-    height: 100%;
-    width: 100%;
+    height: calc(800px * 1/5);
+    width: 800px;
     position: absolute;
     padding: 1%;
     font-weight: 400;
 }
 
 @media only screen and (max-width: 1024px) {
-    div.description {
+    div.description, div.description p {
         height: calc(50vw 1/5);
         width: 50vw;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    div.description {
+    div.description, div.description p {
         height: calc(70vw * 2/5);
         width: 70vw;
     }
 }
 
 @media only screen and (max-width: 440px) {
-    div.description {
+    div.description, div.description p {
         height: calc(80vw * 3/5);
         width: 80vw;
     }
@@ -355,7 +355,7 @@ ul.grid-ha li p {
 /* footer */
 
 footer {
-    
+
     background-color: var(--footer-backgroud-color);
     color: var(--footer-text-color);
 
@@ -367,6 +367,7 @@ footer {
 }
 
 footer div.content-1 {
+    max-width: 1024px;
     margin: 10px;
     width: 90%;
     display: flex;
@@ -404,4 +405,17 @@ footer div.content-2 {
 
 .redes ul li {
     margin-right: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    footer div.content-1 {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    footer div.content-1 div {
+        margin-bottom: 3px;
+    }
 }
