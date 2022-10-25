@@ -69,6 +69,16 @@ section h2 {
     font-family: var(--primary-font);
 }
 
+@media only screen and (min-width: 1024px) {
+    section:not(#inicio) {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* texts */
+
 h2 {
     font-family: var(--secundary-font);
 }
@@ -126,15 +136,16 @@ section#inicio{
 /* section projetos */
 
 section#projetos{
-    margin: auto;
-    height: 85vh;
+    margin-bottom: 40px;
+    /* height: 85vh; */
 }
 
 /* slider */
 
 div.slider {
-    height: 50vh;
-    width: calc(50vh * 16/9);
+    height: 60vh;
+    width: calc(60vh * 16/9);
+
     position: relative;
     margin: auto;
     border-radius: 20px;
@@ -164,10 +175,26 @@ div.slider div.controller {
 }
 
 div.slider div.controller input {
+    height: 15px;
+    width: 15px;
     margin: 0 2px;
 }
 
+@media only screen and (max-width: 1024px) {
+    div.slider {
+        height: calc(60vw * 9/16);
+        width: 60vw;
+    }
+}
+
 @media only screen and (max-width: 800px) {
+    div.slider {
+        height: calc(80vw * 9/16);
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
     div.slider {
         height: calc(90vw * 9/16);
         width: 90vw;
