@@ -206,27 +206,50 @@ div.slider div.controller input {
 /* description */
 
 div.description {
-    margin: auto;
-    margin-top: 3em;
-    display: flex;
-    justify-content: center;
+    height: calc(800px * 1/5);
+    width: 800px;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
 }
 
 div.description p {
-    background-color: white;
-    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 1%;
+    font-weight: 400;
+}
 
-    width: 90vw;
-    padding: 0.5em;
-    border-radius: 10px;
-    position: absolute;
+@media only screen and (max-width: 1024px) {
+    div.description {
+        height: calc(50vw 1/5);
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.description {
+        height: calc(70vw * 2/5);
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div.description {
+        height: calc(80vw * 3/5);
+        width: 80vw;
+    }
 }
 
 /* button */
 
 div.buttons {
     margin: auto;
-    margin-top: 3em;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
