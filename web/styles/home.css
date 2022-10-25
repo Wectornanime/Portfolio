@@ -24,6 +24,8 @@
 
     --grid-color-1: #09080A;
     --grid-color-2: #c5c266;
+
+    --medium-size: 800px;
 }
 
 *{
@@ -132,11 +134,10 @@ section#projetos{
 
 div.slider {
     height: 50vh;
-    width: 50%;
+    width: calc(50vh * 16/9);
     position: relative;
     margin: auto;
     border-radius: 20px;
-
 }
 
 div.slider div.images {
@@ -164,6 +165,13 @@ div.slider div.controller {
 
 div.slider div.controller input {
     margin: 0 2px;
+}
+
+@media only screen and (max-width: 800px) {
+    div.slider {
+        height: calc(90vw * 9/16);
+        width: 90vw;
+    }
 }
 
 /* description */
