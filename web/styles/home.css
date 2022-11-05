@@ -24,6 +24,8 @@
 
     --grid-color-1: #09080A;
     --grid-color-2: #c5c266;
+
+    --medium-size: 800px;
 }
 
 *{
@@ -66,6 +68,16 @@ section h2 {
     margin-bottom: 1em;
     font-family: var(--primary-font);
 }
+
+@media only screen and (min-width: 1024px) {
+    section:not(#inicio) {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* texts */
 
 h2 {
     font-family: var(--secundary-font);
@@ -124,19 +136,21 @@ section#inicio{
 /* section projetos */
 
 section#projetos{
-    margin: auto;
-    height: 85vh;
+    margin-bottom: 40px;
+    /* height: 85vh; */
 }
 
 /* slider */
 
 div.slider {
-    height: 50vh;
-    width: 50%;
+    height: calc(1024px * 9/16);
+    width: 1024px;
+
     position: relative;
     margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
-
 }
 
 div.slider div.images {
@@ -163,33 +177,79 @@ div.slider div.controller {
 }
 
 div.slider div.controller input {
+    height: 15px;
+    width: 15px;
     margin: 0 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    div.slider {
+        height: calc(60vw * 9/16);
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.slider {
+        height: calc(80vw * 9/16);
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div.slider {
+        height: calc(90vw * 9/16);
+        width: 90vw;
+    }
 }
 
 /* description */
 
 div.description {
-    margin: auto;
-    margin-top: 3em;
-    display: flex;
-    justify-content: center;
+    height: calc(800px * 1/5);
+    width: 800px;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
 }
 
 div.description p {
-    background-color: white;
-    font-weight: 500;
-
-    width: 90vw;
-    padding: 0.5em;
-    border-radius: 10px;
+    height: calc(800px * 1/5);
+    width: 800px;
     position: absolute;
+    padding: 1%;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+    div.description, div.description p {
+        height: calc(50vw 1/5);
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.description, div.description p {
+        height: calc(70vw * 2/5);
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    div.description, div.description p {
+        height: calc(80vw * 3/5);
+        width: 80vw;
+    }
 }
 
 /* button */
 
 div.buttons {
     margin: auto;
-    margin-top: 3em;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -221,18 +281,41 @@ section#habilidades .contents {
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 800px){
+    section#habilidades {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section#habilidades .contents {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    section#habilidades {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* GRID */
 
 section#habilidades ul.grid-ha {
     margin-top: 10px;
-    width: 45vw;
+    margin-right: auto;
+    margin-left: auto;
+    width: 392px;
     list-style-type: none;
     color: var(--grid-color-2);
 
     display: grid;
-    gap: 1vw;
-    grid-template-columns: auto auto auto auto auto;
+    gap: 8px;
+    grid-template-columns: auto auto auto auto;
     justify-content: start;
+
 }
 
 section#habilidades ul.grid-ha li {
@@ -256,9 +339,23 @@ ul.grid-ha li p {
     font-family: var(--secundary-font);
 }
 
+@media only screen and (max-width: 800px) {
+    section#habilidades ul.grid-ha {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    section#habilidades ul.grid-ha {
+        width: 292px;
+        grid-template-columns: auto auto auto;
+    }
+}
+
 /* footer */
 
 footer {
+
     background-color: var(--footer-backgroud-color);
     color: var(--footer-text-color);
 
@@ -270,6 +367,7 @@ footer {
 }
 
 footer div.content-1 {
+    max-width: 1024px;
     margin: 10px;
     width: 90%;
     display: flex;
@@ -307,4 +405,17 @@ footer div.content-2 {
 
 .redes ul li {
     margin-right: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    footer div.content-1 {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    footer div.content-1 div {
+        margin-bottom: 3px;
+    }
 }
