@@ -100,5 +100,5 @@ setInterval(() => {
             break;
             
     };
-    console.log(`el = ${elementos.getCheck()} sld = ${sld}`)
+    //console.log(`el = ${elementos.getCheck()} sld = ${sld}`)
 }, 100);
