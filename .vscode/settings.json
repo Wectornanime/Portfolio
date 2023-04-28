@@ -1,5 +1,5 @@
 {
     "liveServer.settings.root": "/web",
-    "liveServer.settings.port": 8080,
+    "liveServer.settings.port": 80,
     "bookmarks.saveBookmarksInProject": true
 }
