@@ -282,7 +282,7 @@ section#habilidades .contents {
 }
 
 @media only screen and (max-width: 800px){
-    section#habilidades {
+    section#habilidades .contents {
         width: 400px;
         margin-left: auto;
         margin-right: auto;
@@ -294,7 +294,7 @@ section#habilidades .contents {
 }
 
 @media only screen and (max-width: 440px) {
-    section#habilidades {
+    section#habilidades .contents {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
